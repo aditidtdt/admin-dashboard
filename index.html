@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <div class="container">
@@ -20,14 +21,33 @@
         </ul>
       </div>
       <div class="navbar">
-        <input type="search" class="search" />
+        <div>
+          <img src="./assets/search.png" alt="search icon" class="icon" />
+          <input type="search" id="search" />
+        </div>
+        <div>
+          <img
+            src="./assets/profile-icon.png"
+            alt="user profile"
+            class="profile-icon"
+          />
+          <span>@userAditi</span>
+        </div>
       </div>
       <div class="actions">
-        <p>Hi there,</p>
-        <h2>Name</h2>
-        <button>Upload</button>
-        <button>Edit</button>
-        <button>Share</button>
+        <div>
+          <img
+            src="./assets/profile-icon.png"
+            alt="profile-icon"
+            class="profile-icon"
+          />
+          <h2>Welcome! Aditi</h2>
+        </div>
+        <div>
+          <button class="actionBtn">Upload</button>
+          <button class="actionBtn">Edit</button>
+          <button class="actionBtn">Share</button>
+        </div>
       </div>
       <div class="projects"></div>
       <div class="useful-links"></div>
