@@ -20,7 +20,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: 1.5fr 2fr 2fr 1fr;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
   grid-template-rows: 1fr 1fr 3fr 3fr 3fr;
   height: 100vh;
   width: 100vw;
@@ -64,6 +64,10 @@ span {
   background-color: #B0DB9C;
 }
 
+#search:hover {
+  border: 2px solid rgb(0, 0, 0, 0.3);
+}
+
 .profile-icon, .dashboard-icon {
   height: 3rem;
   width: 3rem;
@@ -77,6 +81,12 @@ span {
   color: black;
   background-color: #B0DB9C;
   font-family: poppins-medium, sans-serif;
+}
+
+.actionBtn:hover {
+  color:#B0DB9C;
+  background-color: black;
+  border: 2px solid black;
 }
 
 .sidebar {
@@ -116,12 +126,6 @@ h1 {
   display: inline;
 }
 
-.projects {
-  grid-area: 3/2/6/4;
-  border-right: 3px solid #B0DB9C;
-  padding: 20px;
-}
-
 .resources {
   grid-area: 3/4/5/5;
   border-bottom: 3px solid #B0DB9C;
@@ -133,7 +137,7 @@ h1 {
   padding: 20px;
 }
 
-.socials-list > li {
+.socials-list > li, .resources-list > li {
   list-style: none;
   display: flex;
   gap: 1rem;
@@ -148,3 +152,10 @@ a {
 a:hover {
   color: #B0DB9C;
 }
+
+.projects {
+  grid-area: 3/2/6/4;
+  border-right: 3px solid #B0DB9C;
+  padding: 20px;
+}
+
