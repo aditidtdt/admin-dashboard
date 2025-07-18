@@ -111,6 +111,7 @@ span {
   padding-bottom: 1rem;
 }
 
+
 h1 {
   display: inline;
 }
@@ -130,4 +131,20 @@ h1 {
 .socials {
   grid-area: 5/4/6/5;
   padding: 20px;
+}
+
+.socials-list > li {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding-top: 14px;
+  align-items: center;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: #B0DB9C;
 }
